@@ -2,63 +2,50 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage del Sito Personale</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Pagina con Menu di Navigazione a Scorrimento</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+   <header>
+    <button onclick="toggleDropdown()" class="dropbtn" ></button></header>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#section1" onclick="closeDropdown()">Intro</a>
+        <a href="#section2" onclick="closeDropdown()">Projects</a>
+        <a href="#section3" onclick="closeDropdown()">Contacts</a>
+    </div>
+   
+    <section0 id="section0" ></section0>
+    <section id="section1" style="background-color: #f0f0f0;">Intro</section>
+    <section id="section2" style="background-color: #ddd;">Projects</section>
+    <section id="section3" style="background-color: #ccc;">Contatti</section>
 
-<header>
-    <h1>Benvenuto sul Sito Personale di [Il tuo nome]</h1>
-</header>
+    <script>
+        // Aggiungi un'animazione per lo scorrimento quando viene cliccato un link nel menu di navigazione
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
 
-<div class="container">
-    <h2>Benvenuto!</h2>
-    <p>Questo è il mio sito personale, dove condivido le mie passioni, esperienze e molto altro.</p>
-    <p>Guarda il mio <a href="bio.html">profilo</a> per saperne di più su di me.</p>
-    <p>Visita la <a href="blog.html">pagina del blog</a> per leggere i miei ultimi articoli.</p>
-</div>
+                const targetId = this.getAttribute('href');
+                const targetPosition = document.querySelector(targetId).offsetTop;
 
-<footer>
-    <p>Sito creato da [Il tuo nome] - &copy; 2023</p>
-</footer>
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById("myDropdown");
+            dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+        }
 
+        function closeDropdown() {
+            const dropdown = document.getElementById("myDropdown");
+            dropdown.style.display = "none";
+        }
+    </script>
 </body>
 </html>
