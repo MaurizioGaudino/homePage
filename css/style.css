@@ -1,3 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+.loading {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  background-image: url("../img/traffic.gif");
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  
+}
+
+.loading-text {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.loading-text span {
+  display:inline-block;
+  color: #fff;
+  font-size: 64px;
+  font-family: brothehood;
+  font-weight: bold;
+}
+.loading-text span:nth-child(1) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 0s infinite linear alternate;
+          animation: blur-text 1s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.2s infinite linear alternate;
+          animation: blur-text 1s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.4s infinite linear alternate;
+          animation: blur-text 1s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.6s infinite linear alternate;
+          animation: blur-text 1s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 0.8s infinite linear alternate;
+          animation: blur-text 1s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 1s infinite linear alternate;
+          animation: blur-text 1s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 1.2s infinite linear alternate;
+          animation: blur-text 1s 1.2s infinite linear alternate;
+}
+.loading-text span:nth-child(8) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 1.4s infinite linear alternate;
+          animation: blur-text 1s 1.4s infinite linear alternate;
+}
+.loading-text span:nth-child(9) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 1.6s infinite linear alternate;
+          animation: blur-text 1s 1.6s infinite linear alternate;
+}
+.loading-text span:nth-child(10) {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-animation: blur-text 1s 1.8s infinite linear alternate;
+          animation: blur-text 1s 1.8s infinite linear alternate;
+}
+.loading-text span:nth-child(11) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 2s infinite linear alternate;
+            animation: blur-text 1s 2s infinite linear alternate;
+  }
+  .loading-text span:nth-child(12) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 2.2s infinite linear alternate;
+            animation: blur-text 1s 2.2s infinite linear alternate;
+  }
+  .loading-text span:nth-child(13) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 2.4s infinite linear alternate;
+            animation: blur-text 1s 2.4s infinite linear alternate;
+  }
+  .loading-text span:nth-child(14) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 2.6s infinite linear alternate;
+            animation: blur-text 1s 2.6s infinite linear alternate;
+  }
+  .loading-text span:nth-child(15) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 2.8s infinite linear alternate;
+            animation: blur-text 1s 2.8s infinite linear alternate;
+  }
+  .loading-text span:nth-child(16) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 3s infinite linear alternate;
+            animation: blur-text 1s 3s infinite linear alternate;
+  }
+  .loading-text span:nth-child(17) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 3.2s infinite linear alternate;
+            animation: blur-text 1s 3.2s infinite linear alternate;
+  }
+  .loading-text span:nth-child(18) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 3.4s infinite linear alternate;
+            animation: blur-text 1s 3.4s infinite linear alternate;
+  }
+  .loading-text span:nth-child(19) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 3.6s infinite linear alternate;
+            animation: blur-text 1s 3.6s infinite linear alternate;
+  }
+  .loading-text span:nth-child(20) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 3.8s infinite linear alternate;
+            animation: blur-text 1s 3.8s infinite linear alternate;
+  }
+  .loading-text span:nth-child(21) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 4s infinite linear alternate;
+            animation: blur-text 1s 4s infinite linear alternate;
+  }
+  .loading-text span:nth-child(22) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 4.2s infinite linear alternate;
+            animation: blur-text 1s 4.2s infinite linear alternate;
+  }
+  .loading-text span:nth-child(23) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 4.4s infinite linear alternate;
+            animation: blur-text 1s 4.4s infinite linear alternate;
+  }
+  .loading-text span:nth-child(24) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 4.6s infinite linear alternate;
+            animation: blur-text 1s 4.6s infinite linear alternate;
+  }
+  .loading-text span:nth-child(25) {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    -webkit-animation: blur-text 1s 4.8s infinite linear alternate;
+            animation: blur-text 1s 4.8s infinite linear alternate;
+  }
+@-webkit-keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+}
+
+@keyframes blur-text {
+  0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+            color: #fff;
+  }
+  50% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+            color: #1c2aeb;
+  }
+  100% {
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+            color: rgb(0, 255, 55);
+  }
+}
 /* Stile per le sezioni */
 body{
     background-color: transparent;
@@ -8,21 +217,35 @@ header {
     background-color:transparent;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     overflow: hidden; /* Per contenere il float */
     display: flex;
     justify-content: flex-end; /* Allinea gli elementi all'estremità destra */
+    border-bottom: 1px solid gray;
 }
-section0 {
-    background-image: url("../img/section0.jpg");
+.section0 {
+    background-color: black;
     background-size:cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
+    position: relative;
+}
+.side
+{
+    background-image: url("../img/side.jpg");
+    position: relative;
+    height: 100vh; /* Altezza pari all'intera altezza della pagina */
+    width: 20%; /* Larghezza pari all'intera larghezza della pagina */
+    align-items: center;
+    justify-content:right; /* Posiziona l'immagine a destra */
+    background-size: cover;
+    background-position: center;
 }
 section {
     height: 100vh;
@@ -31,68 +254,108 @@ section {
     align-items: center;
     font-size: 3em;
 }
-/* Stile per il menu di navigazione */
-nav {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    margin: 10px 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #007bff;
-    display: block;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #0044cc;
-}
 /* Stile per il menu a tendina */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color:black;
+    min-width: 16px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
     z-index: 1;
+    margin-right:25px;
     right: 0;
 }
 
 .dropdown-content a {
-    color: black;
+    font-family: brotherhood;
+    font-size: small;
+    font-weight: bold;
+    color:white;
     padding: 12px 16px;
-    text-decoration: none;
+    text-align: right;
+    text-decoration:none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #0056b3;
+    color: #0056b3;
 }
 
 /* Stile per il bottone del menu */
 .dropbtn {
-    background-image:url("../img/menu.png");
+    background-image:url("../img/menu-black-rounded-square-interface-button_icon-icons.com_72990.png");
     background-size: cover; /* Adatta l'immagine alla dimensione del bottone */
     background-position: center; /* Centra l'immagine all'interno del bottone */
     background-repeat: no-repeat;
-    color: white;
-    padding: 20px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 50%;
     border: none;
-    cursor: pointer;
+    cursor:pointer;
     float: right;
 }
 
-.dropbtn:hover {
-    background-color: #0056b3;
+.logo_linkedin
+{
+    background-image:url("../img/linkedin_social_network_network_communication_connection_icon_192244.png");
+    position:static;
+    background-size:contain; /* Adatta l'immagine alla dimensione del bottone */
+    background-position:center; /* Centra l'immagine all'interno del bottone */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+    margin-left: 8px;
+}
+.logo_github
+{
+    background-image:url("../img/4202098codedevelopergithublogo-115590_115711.png");
+    position: static;
+    background-size:contain; /* Adatta l'immagine alla dimensione del bottone */
+    background-position:center; /* Centra l'immagine all'interno del bottone */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border:none;
+    padding: 20px;
+}
+logo_gmail
+{
+    background-image:url("../img/new_mail_gmailmessage_7038.png");
+    position: relative;
+    background-size:contain; /* Adatta l'immagine alla dimensione del bottone */
+    background-position:center; /* Centra l'immagine all'interno del bottone */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+}
+container
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color:transparent;
+    padding: 10px;
+    
+}
+text
+{
+    border: none;
+    background-color: transparent;
+    text-align:justify;
+    font-family: aerotis;
+    margin-top: 0%;
+    color: white;
+    animation: colorText 10s linear infinite;
+}
+@keyframes colorText
+{
+    0% {
+        color:white;
+    }
+    50%{ color:red;}
+
+    100% {
+        color:green;
+    }
 }
