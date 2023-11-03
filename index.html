@@ -16,18 +16,18 @@
 
 <body>
     <section class="section0" id="section0" >
-        
+
         <div class="loading"> 
-              <container>
-                    <a href="https://github.com/MaurizioGaudino" class="logo_github" target="_blank"></a> 
-                    <a href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ class="logo_linkedin" target="_blank"></a>
-                        <button onclick="toggleDropdown()" class="dropbtn" ></button>
-                             <div id="myDropdown" class="dropdown-content">
-                                    <a href="#section1" onclick="closeDropdown()">INTRO</a>
-                                    <a href="#section2" onclick="closeDropdown()">PROJECTS</a>
-                                    <a href="#section3" onclick="closeDropdown()">CONTACTS</a>
-                                </div>
+                <container class="container">
+                    
+                        <button class="textLogo" onclick="toggleDropdown()">Menu</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                    <a style="font-family: brotherhood;font: size 20px; ;" href="#section1" onclick="closeDropdown()">ABOUT ME</a>
+                                    <a style="font-family: brotherhood;" href="#section2" onclick="closeDropdown()">PROJECTS</a>
+                                    <a style="font-family: brotherhood;" href="#section3" onclick="closeDropdown()">CONTACTS</a>
+                            </div>
                 </container>
+
             <div class="loading-text">
                 <span class="loading-text-words">S</span>
                 <span class="loading-text-words">T</span>
@@ -57,12 +57,42 @@
         </div>
     </section>
 
-    <section id="section1" style="background-color: black;color: white;">INTRO</section>
-    <section id="section2" style="background-color: black;color: white;">Projects</section>
-    <section id="section3" style="background-color: black;color: white;">Contacts</section>
+    <section class="section3" id="section1" style="background-color: black;color: white;">
+        <div>
+        <br> 
+        <br>
+        <h1 style="font-size: 48px;font-family: brotherhood;" class="text" > About Me </h1>
+        <div></div>
+        <h1 class="text">Hello, I'm Maurizio Gaudino, a dedicated student pursuing a Master's degree in Computer Engineering with a specialization in Embedded Systems and IoT at the University of Naples Federico II.</h1>
+        <div></div>
+        
+        <h1 class="text"></h1>
+        <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a> 
+
+    </section>
+
+    <section class="section3" id="section2" style="background-color: black;color: white;font-family: brotherhood;">Projects
+        <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a></section>
+
+    <section class="section3" id="section3" style="background-color: black;color: white;"> 
+    <div>
+        <br> 
+        <br>
+        <h1 style="font-size: 48px; font-family: brotherhood;">Contacts</h1> 
+        <div></div>
+        <h1 class="text">Welcome to the Contacts section! I'm thrilled to stay connected with you.</h1>
+        <div></div> 
+        <h1 class="text">Here, you'll find all the ways to reach out and connect with me.</h1>
+        <br>
+        <h1 class="text"style="font-family: brotherhood;">Mail:&nbsp <a style="text-decoration:none;color:red;"href="mailto:gaudinomaurizio4@gmail.com" target="_blank">gaudinomaurizio4@gmail.com</a>&nbsp<a href="mailto:gaudinomaurizio4@gmail.com" class="logo_gmail" target="_blank"></a></h1>
+        <h1 class="text"style="font-family: brotherhood;">Github:&nbsp<a style="text-decoration:none;color:purple;"href="https://github.com/MaurizioGaudino"target="_blank">MaurizioGaudino</a>&nbsp<a href="https://github.com/MaurizioGaudino" class="logo_github" target="_blank"></a></h1>  
+        <h1 class="text"style="font-family: brotherhood;">Linkedin:&nbsp<a style="text-decoration:none;color:lightskyblue;" href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ target="_blank">Maurizio Gaudino</a>&nbsp<a href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ class="logo_linkedin" target="_blank"></a></h1>
+    </div>
+    <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a> 
+    </section>
 
     <script>
-        //Animazione per lo scorrimento quando viene cliccato un link nel menu di navigazione
+        //Animazione per lo scorrimento
         document.querySelectorAll('nav a').forEach
         (
             anchor => 

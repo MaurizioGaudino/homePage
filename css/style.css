@@ -26,7 +26,8 @@
   display:inline-block;
   color: #fff;
   font-size: 64px;
-  font-family: brothehood;
+  font-family: brotherhood;
+  opacity: 0.5;
   font-weight: bold;
 }
 .loading-text span:nth-child(1) {
@@ -212,6 +213,7 @@ body{
     background-color: transparent;
     margin:0;
     padding: 0;
+    
 }
 header {
     background-color:transparent;
@@ -236,6 +238,20 @@ header {
     font-size: 3em;
     position: relative;
 }
+.section3 {
+        background-color: black;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items:normal;
+        font-size: 3em;
+        position: relative;
+        padding-bottom: 50px; /* Spazio in basso per l'icona */
+    }
 .side
 {
     background-image: url("../img/side.jpg");
@@ -258,23 +274,23 @@ section {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:black;
-    min-width: 16px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    background-color:transparent;
+    min-width: 109px;
     z-index: 1;
-    margin-right:25px;
-    right: 0;
+    margin:10px;
+    right: -10px;
+    border: none;
 }
 
 .dropdown-content a {
-    font-family: brotherhood;
-    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
     font-weight: bold;
     color:white;
     padding: 12px 16px;
     text-align: right;
-    text-decoration:none;
     display: block;
+    text-decoration: underline;
 }
 
 .dropdown-content a:hover {
@@ -282,18 +298,20 @@ section {
 }
 
 /* Stile per il bottone del menu */
-.dropbtn {
-    background-image:url("../img/menu-black-rounded-square-interface-button_icon-icons.com_72990.png");
-    background-size: cover; /* Adatta l'immagine alla dimensione del bottone */
-    background-position: center; /* Centra l'immagine all'interno del bottone */
+ /* .dropbtn {
+     background-image:url("../img/list_menu_document_burger_icon_226588.png");
+     background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    background-color: white;
-    padding: 30px;
+    background-color:lightblue;
     border-radius: 50%;
+    padding: 20px;
+    opacity: 0.5;
+    margin-left: 8px;
     border: none;
     cursor:pointer;
     float: right;
-}
+}   */
 
 .logo_linkedin
 {
@@ -304,8 +322,7 @@ section {
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-    padding: 20px;
-    margin-left: 8px;
+    padding: 30px;
 }
 .logo_github
 {
@@ -316,9 +333,9 @@ section {
     background-repeat: no-repeat;
     background-color: transparent;
     border:none;
-    padding: 20px;
+    padding: 30px;
 }
-logo_gmail
+.logo_gmail
 {
     background-image:url("../img/new_mail_gmailmessage_7038.png");
     position: relative;
@@ -327,35 +344,87 @@ logo_gmail
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
-    padding: 20px;
+    padding: 30px;
 }
-container
+.container
 {
-    position: fixed;
+    align-items:center;    
+    position:absolute;
     top: 10px;
     right: 10px;
     background-color:transparent;
-    padding: 10px;
+    padding: 5px;
+    min-width: 100px;
+    animation: colorBottom 1s linear infinite; 
     
 }
-text
+.textLogo
 {
-    border: none;
-    background-color: transparent;
-    text-align:justify;
-    font-family: aerotis;
-    margin-top: 0%;
+    font-weight:bold;
+    font-size: 28px;   
+    font-family: brotherhood;
     color: white;
-    animation: colorText 10s linear infinite;
+    animation:colorText 1s linear infinite ;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    min-width: 50px;
+   
+}
+.text
+{
+    font-weight:lighter;
+    font-size: 32px;   
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.arrow
+{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 50px;
+        width:  50px;
+        border-radius: 50%;
+        background-color: white;
+        bottom: 60px; /* Distanza dal basso */
+        right: 30px; 
+        animation:  animArrow 1s linear infinite;
 }
 @keyframes colorText
 {
     0% {
         color:white;
     }
-    50%{ color:red;}
+    50%{ color: #1c2aeb;}
 
     100% {
-        color:green;
+        color:rgb(0, 255, 55);
     }
+}
+@keyframes colorBottom
+{
+    0% {
+        border-bottom:5px dotted white;
+        color:white;
+    }
+    50%{ 
+        border-bottom:5px dotted #1c2aeb;
+        color: #1c2aeb;}
+
+    100% {
+        border-bottom:5px dotted rgb(0, 255, 55);
+        color:rgb(0, 255, 55);
+       }
+}
+@keyframes animArrow
+{
+    0% {
+       transform: translateY(0px);
+       }
+
+    100%{ 
+         transform: translateY(-25px);
+       }
 }
