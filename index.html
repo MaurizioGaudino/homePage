@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/aerotis" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/brotherhood-3" rel="stylesheet">
-    <head>
+    <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nu-century-gothic" rel="stylesheet"><link href="https://fonts.cdnfonts.com/css/rise-of-beauty" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <head>
                 
@@ -18,10 +19,11 @@
     <section class="section0" id="section0" >
 
         <div class="loading"> 
-                <container class="container">
+                <container class="container" style="position: fixed;">
                     
-                        <button class="textLogo" onclick="toggleDropdown()">Menu</button>
+                        <button class="textLogo"  onclick="toggleDropdown()">Menu</button>
                             <div id="myDropdown" class="dropdown-content">
+                                    <a style="font-family: brotherhood;font: size 20px; ;" href="#section0" onclick="closeDropdown()">INTRO</a>
                                     <a style="font-family: brotherhood;font: size 20px; ;" href="#section1" onclick="closeDropdown()">ABOUT ME</a>
                                     <a style="font-family: brotherhood;" href="#section2" onclick="closeDropdown()">PROJECTS</a>
                                     <a style="font-family: brotherhood;" href="#section3" onclick="closeDropdown()">CONTACTS</a>
@@ -59,36 +61,57 @@
 
     <section class="section3" id="section1" style="background-color: black;color: white;">
         <div>
-        <br> 
-        <br>
-        <h1 style="font-size: 48px;font-family: brotherhood;" class="text" > About Me </h1>
+        <h1 style="font-size: 48px;font-family: brotherhood;margin-left: 50px;" class="textTitle" > About Me </h1>
         <div></div>
-        <h1 class="text">Hello, I'm Maurizio Gaudino, a dedicated student pursuing a Master's degree in Computer Engineering with a specialization in Embedded Systems and IoT at the University of Naples Federico II.</h1>
+        <h1 class="text" style="margin-left: 50px;font-size: 24;font-family:'Times New Roman', Times, serif;">Hello, I'm Maurizio Gaudino, a dedicated student pursuing a Master's degree in Computer Engineering with a specialization in Embedded Systems and IoT at the University of Naples Federico II.
+        <br>
+        During the universitary years i had the opportunity to develop knownledge in:
+        <br> 
+        <ul>
+            <li>Distributed Systems</li>
+            <li>Risk Assesment</li>
+            <li>Design of Secure Systems</li>
+            <li>ARM Processors</li>
+            <li>Real Time Industrial Systems</li>
+            <li>IoT</li>
+            <li>Software Architecture Design</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>VHDL</li>
+            <li>System Verilog</li>
+            <li>SQL</li>
+            <li>MONGO</li>
+            <li>Linux</li>
+          </ul>
+        </h1>
         <div></div>
         
         <h1 class="text"></h1>
-        <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a> 
+        <!-- <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a>  -->
 
     </section>
 
-    <section class="section3" id="section2" style="background-color: black;color: white;font-family: brotherhood;">Projects
-        <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a></section>
+    <section class="section3" id="section2" style="background-color: black;color: white;">
+        <div>
+        <h1 style="font-size: 48px;font-family: brotherhood;margin-left: 50px;" class="textTitle" > Projects </h1>
+        <a class="text" href="Projects/rIskV.html" target="_blank" style="margin-left: 50px;" > [RISC-V]:</a><a class="text" style="text-decoration: underline;margin-left: 50px;color: aqua;" href="Projects/rIskV.html" target="_blank" >Physical Memory Relocation in CV32E41S  </a>
+        <!-- <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a> -->
+        </section>
 
     <section class="section3" id="section3" style="background-color: black;color: white;"> 
     <div>
-        <br> 
-        <br>
-        <h1 style="font-size: 48px; font-family: brotherhood;">Contacts</h1> 
+        <h1 style="font-size: 48px; font-family: brotherhood;margin-left: 50px;" class="textTitle" >Contacts</h1> 
         <div></div>
-        <h1 class="text">Welcome to the Contacts section! I'm thrilled to stay connected with you.</h1>
+        <h1 class="text" style="margin-left: 50px;">Welcome to the Contacts section! I'm thrilled to stay connected with you.</h1>
         <div></div> 
-        <h1 class="text">Here, you'll find all the ways to reach out and connect with me.</h1>
+        <h1 class="text" style="margin-left: 50px;">Here, you'll find all the ways to reach out and connect with me.</h1>
         <br>
-        <h1 class="text"style="font-family: brotherhood;">Mail:&nbsp <a style="text-decoration:none;color:red;"href="mailto:gaudinomaurizio4@gmail.com" target="_blank">gaudinomaurizio4@gmail.com</a>&nbsp<a href="mailto:gaudinomaurizio4@gmail.com" class="logo_gmail" target="_blank"></a></h1>
-        <h1 class="text"style="font-family: brotherhood;">Github:&nbsp<a style="text-decoration:none;color:purple;"href="https://github.com/MaurizioGaudino"target="_blank">MaurizioGaudino</a>&nbsp<a href="https://github.com/MaurizioGaudino" class="logo_github" target="_blank"></a></h1>  
-        <h1 class="text"style="font-family: brotherhood;">Linkedin:&nbsp<a style="text-decoration:none;color:lightskyblue;" href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ target="_blank">Maurizio Gaudino</a>&nbsp<a href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ class="logo_linkedin" target="_blank"></a></h1>
+        <h1 class="text"style="font-family: brotherhood;margin-left: 50px;">Mail:&nbsp <a style="text-decoration:none;color:red;"href="mailto:gaudinomaurizio4@gmail.com" target="_blank">gaudinomaurizio4@gmail.com</a>&nbsp<a href="mailto:gaudinomaurizio4@gmail.com" class="logo_gmail" target="_blank"></a></h1>
+        <h1 class="text"style="font-family: brotherhood;margin-left: 50px;">Github:&nbsp<a style="text-decoration:none;color:purple;"href="https://github.com/MaurizioGaudino"target="_blank">MaurizioGaudino</a>&nbsp<a href="https://github.com/MaurizioGaudino" class="logo_github" target="_blank"></a></h1>  
+        <h1 class="text"style="font-family: brotherhood;margin-left: 50px;">Linkedin:&nbsp<a style="text-decoration:none;color:lightskyblue;" href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ target="_blank">Maurizio Gaudino</a>&nbsp<a href= https://www.linkedin.com/in/maurizio-gaudino-1142a0249/ class="logo_linkedin" target="_blank"></a></h1>
     </div>
-    <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a> 
+    <!-- <a href="#section0" > <img class="arrow" src="img/up-arrow.png" alt="Icona"></a>  -->
     </section>
 
     <script>
